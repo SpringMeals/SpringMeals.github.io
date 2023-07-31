@@ -1,0 +1,87 @@
+body{
+    background-image: url("fondo-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#logo{
+    padding-top: 40px;
+    width: 250px;
+}
+#inicio{
+    background-color: white;
+   margin-left: 550px;
+   margin-right: 550px;
+   margin-top: 80px;
+   margin-bottom: 150px;
+   text-align: center;
+   border-top-left-radius: 15px;
+   border-top-right-radius: 15px;
+   border-bottom-left-radius: 15px;
+   border-bottom-right-radius: 15px; 
+}
+#btn{
+    padding-bottom: 20px;
+}
+.botones1{
+    margin-top: 5px;
+    position:relative;
+    padding: 10px 100px;
+    border: none;
+    outline: none;
+    background-color: RGB(87, 131, 226);
+    color: white;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.5s;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+  .botones1:hover{
+    color: black;
+    background-color: RGB(253, 255, 190);
+  }
+  .botones1 span{
+  position: absolute;
+  background: midnightblue;
+  transition: 0.5s;
+  }
+  .botones1 span:nth-child(1){
+    width: 100%;
+    height: 1px;
+    top: 0;
+    left: -100%;
+  }
+  .botones1 span:nth-child(2){
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    right: -100%;
+  }
+  .botones1 span:nth-child(3){
+    width: 1px;
+    height: 100%;
+    bottom: -100%;
+    left: -0;
+  }
+  .botones1 span:nth-child(4){
+    width: 1px;
+    height: 100%;
+    top: -100%;
+    right: 0;
+  }
+  .botones1:hover span:nth-child(1){
+    left: 0;
+  }
+  .botones1:hover span:nth-child(2){
+    right: 0;
+  }
+  .botones1:hover span:nth-child(3){
+    bottom: 0;
+  }
+  .botones1:hover span:nth-child(4){
+    top: 0;
+  }
+  
