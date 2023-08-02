@@ -1,87 +1,63 @@
-body{
+margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
     background-image: url("fondo-1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-#logo{
-    padding-top: 40px;
-    width: 250px;
-}
-#inicio{
-    background-color: white;
-   margin-left: 550px;
-   margin-right: 550px;
-   margin-top: 80px;
-   margin-bottom: 150px;
-   text-align: center;
-   border-top-left-radius: 15px;
-   border-top-right-radius: 15px;
-   border-bottom-left-radius: 15px;
-   border-bottom-right-radius: 15px; 
-}
-#btn{
-    padding-bottom: 20px;
-}
-.botones1{
-    margin-top: 5px;
-    position:relative;
-    padding: 10px 150px;
-    border: none;
-    outline: none;
-    background-color: RGB(87, 131, 226);
-    color: white;
-    cursor: pointer;
-    overflow: hidden;
-    transition: 0.5s;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
-  }
-  .botones1:hover{
-    color: black;
-    background-color: RGB(253, 255, 190);
-  }
-  .botones1 span{
-  position: absolute;
-  background: midnightblue;
-  transition: 0.5s;
-  }
-  .botones1 span:nth-child(1){
-    width: 100%;
-    height: 1px;
-    top: 0;
-    left: -100%;
-  }
-  .botones1 span:nth-child(2){
-    width: 100%;
-    height: 1px;
-    bottom: 0;
-    right: -100%;
-  }
-  .botones1 span:nth-child(3){
-    width: 1px;
-    height: 100%;
-    bottom: -100%;
-    left: -0;
-  }
-  .botones1 span:nth-child(4){
-    width: 1px;
-    height: 100%;
-    top: -100%;
-    right: 0;
-  }
-  .botones1:hover span:nth-child(1){
-    left: 0;
-  }
-  .botones1:hover span:nth-child(2){
-    right: 0;
-  }
-  .botones1:hover span:nth-child(3){
-    bottom: 0;
-  }
-  .botones1:hover span:nth-child(4){
-    top: 0;
+    
   }
   
+  #logo {
+    max-width: 40%; 
+    height: auto; 
+    padding-top: 20px;
+    display: block; 
+    margin: 0 auto; 
+  }
+ 
+  #inicio {
+    background-color: white;
+    max-width: 400px;
+    margin: 80px auto 150px; 
+    text-align: center;
+    border-radius: 15px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+    padding: 10px; 
+    box-sizing: border-box;
+  }
+
+  .botones1 {
+    display: inline-block; 
+    margin: 5px; 
+    padding: 10px 20px; 
+    background-color: RGB(87, 131, 226);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .botones1:hover {
+    background-color: RGB(253, 255, 190);
+    color: black;
+  }
+  .botones1 span {
+    position: absolute;
+    transition: 0.5s;
+  }
+  
+  .botones1:hover span:nth-child(1) {
+    left: 0;
+  }
+  
+  .botones1:hover span:nth-child(2) {
+    right: 0;
+  }
+  
+  .botones1:hover span:nth-child(3) {
+    bottom: 0;
+  }
+  
+  .botones1:hover span:nth-child(4) {
+    top: 0;
+  }
