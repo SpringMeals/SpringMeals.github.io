@@ -2,16 +2,20 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-image: url("fondo-1.jpg");
+    background-image: url("../index/fondo-1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-
 .redes-section {
-    max-width: 800px;
-    margin: 50px auto;
+    max-width: 400px;
+    margin: 150px auto;
     text-align: center;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 .redes-container {
@@ -36,4 +40,3 @@ h1 {
     font-size: 24px;
     color: #5E90EE;
 }
-
