@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="index/sm-logo.png" type="image">
+  <link rel="stylesheet" href="carrito/carrito.css">
+  <title>ORDEN</title>
+</head>
+<body>
+  <div id="inicio">
+    <h2 id="product-name"></h2>
+    <p id="product-description"></p>
+    <p id="product-price"></p>
+    <button id="add-to-order">AGREGAR A MI PEDIDO</button>
+</div>
+
+  <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const urlParams = new URLSearchParams(window.location.search);
+  const productName = urlParams.get("name");
+  const productDescription = urlParams.get("description");
+  const productPrice = urlParams.get("price");
+  
+  const productNameElement = document.getElementById("product-name");
+  const productDescriptionElement = document.getElementById("product-description");
+  const productPriceElement = document.getElementById("product-price");
+  
+  productNameElement.textContent = productName;
+  productDescriptionElement.textContent = productDescription;
+  productPriceElement.textContent = `${productPrice}`;
+  
+  const addToOrderButton = document.getElementById("add-to-order");
+  addToOrderButton.addEventListener("click", function () {
+    alert("PRODUCTO AGREGADO A TU ORDEN");
+    window.history.back();
+  });
+});
+  </script>
+</body>
+</html>
