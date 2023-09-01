@@ -141,10 +141,10 @@ main{
 .formulario__login{
     opacity: 1;
     display: block;
-    max-height: 400px;
+    height: 400px;
 }
 .formulario__register{
-    max-height: 520px;
+    height: 520px;
     display: none;
 }
 
