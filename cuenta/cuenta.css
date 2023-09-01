@@ -35,7 +35,7 @@ main{
     justify-content: center;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    background-color: #FFCDF2;
+    background-color: rgba(0, 128, 255, 0.5);
     border-radius: 20px;
 
 }
@@ -78,7 +78,7 @@ main{
 
 .caja__trasera button:hover{
     background: #fff;
-    color: #FFCDF2;
+    color: #46A2FD;
 }
 
 /*Formularios*/
@@ -108,7 +108,7 @@ main{
     font-size: 30px;
     text-align: center;
     margin-bottom: 20px;
-    color: #FFCDF2;
+    color: #46A2FD;
 }
 
 .contenedor__login-register form input{
@@ -127,7 +127,7 @@ main{
     margin-top: 40px;
     border: none;
     font-size: 14px;
-    background: #FFCDF2;
+    background: #46A2FD;
     font-weight: 600;
     cursor: pointer;
     color: white;
@@ -141,10 +141,10 @@ main{
 .formulario__login{
     opacity: 1;
     display: block;
-    height: 400px;
+    height: 350px;
 }
 .formulario__register{
-    height: 520px;
+    max-height: 500px;
     display: none;
 }
 
