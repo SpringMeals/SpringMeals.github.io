@@ -227,17 +227,52 @@ section h1
 
 
 @media screen and (max-width: 768px) {
-    section h1 {
-      font-size: 8rem;
-    }
-  
-    section h2 {
-      font-size: 2rem;
-    }
-  
-    section p {
-      font-size: 1rem;
-      margin: 10px;
-    }
+  body {
+    background-size: auto; /* Cambia el tamaño del fondo para que no se repita */
   }
-  
+
+  main {
+    height: auto; /* Ajusta la altura del contenido principal */
+    padding: 20px; /* Agrega espacio alrededor del contenido en dispositivos móviles */
+  }
+
+  section h1 {
+    font-size: 3rem; /* Reduce el tamaño de la fuente del encabezado en dispositivos móviles */
+  }
+
+  .container {
+    width: 100%; /* Ajusta el ancho del contenedor a la pantalla */
+    height: auto; /* Ajusta la altura del contenedor al contenido */
+    padding: 20px; /* Agrega espacio alrededor del contenedor */
+  }
+
+  /* Ajusta los estilos para los elementos dentro de .item en dispositivos móviles */
+  .item {
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+
+  /* Ajusta los estilos para los elementos .content en dispositivos móviles */
+  .item .content {
+    top: 0;
+    left: 10px;
+    width: calc(100% - 20px);
+  }
+
+  .buttons {
+    bottom: 10px; /* Ajusta la posición vertical */
+    text-align: center;
+  }
+
+  .buttons button {
+    width: 40px; /* Reduce el ancho de los botones */
+    height: 40px; /* Reduce la altura de los botones */
+    font-size: 20px; /* Reduce el tamaño del ícono dentro de los botones */
+    margin: 5px; /* Agrega espacio entre los botones */
+  }
+}
+
