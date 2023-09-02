@@ -228,35 +228,36 @@ section h1
 
 @media screen and (max-width: 768px) {
   body {
-    background-size: auto; /* Cambia el tamaño del fondo para que no se repita */
+    background-size: auto; 
   }
-
+  #frase{
+    font-size: 50px;
+  }
   main {
-    height: auto; /* Ajusta la altura del contenido principal */
-    padding: 20px; /* Agrega espacio alrededor del contenido en dispositivos móviles */
+    height: auto;
+    padding: 10px; 
   }
 
   section h1 {
-    font-size: 3rem; /* Reduce el tamaño de la fuente del encabezado en dispositivos móviles */
+    font-size: 9rem; 
   }
 
   .container {
-    width: 100%; /* Ajusta el ancho del contenedor a la pantalla */
-    height: auto; /* Ajusta la altura del contenedor al contenido */
-    padding: 20px; /* Agrega espacio alrededor del contenedor */
+    width: 100%; 
+    height: auto;
+    padding: 20px;
   }
-
-  /* Ajusta los estilos para los elementos dentro de .item en dispositivos móviles */
+.header{
+  height: 10px;
+}
   .item {
-    width: 100%;
+    width: 80%;
     height: auto;
     top: 0;
     left: 0;
     transform: translate(0, 0);
     opacity: 1;
-  }
-
-  /* Ajusta los estilos para los elementos .content en dispositivos móviles */
+}
   .item .content {
     top: 0;
     left: 10px;
@@ -264,15 +265,16 @@ section h1
   }
 
   .buttons {
-    bottom: 10px; /* Ajusta la posición vertical */
+    position: relative;
+    bottom: auto;
     text-align: center;
   }
 
   .buttons button {
-    width: 40px; /* Reduce el ancho de los botones */
-    height: 40px; /* Reduce la altura de los botones */
-    font-size: 20px; /* Reduce el tamaño del ícono dentro de los botones */
-    margin: 5px; /* Agrega espacio entre los botones */
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    position: relative;
+    top: 80px; 
   }
 }
-
