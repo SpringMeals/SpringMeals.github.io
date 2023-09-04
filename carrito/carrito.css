@@ -67,3 +67,6 @@ body {
  #add-to-order:hover span:nth-child(4) {
     top: 0;
   }
+@media screen and (max-width: 768px) {
+  body {
+    background-size: auto; }}
