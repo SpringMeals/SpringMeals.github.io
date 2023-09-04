@@ -112,3 +112,10 @@
 		font-size: 18px;
 	}
 	/*Fin de Menù lateral*/
+
+	@media screen and (max-width: 768px) {
+	.container-menu{
+	height: 178%;
+	}  .cont-menu.open{
+        height: 100%;
+    	}}
