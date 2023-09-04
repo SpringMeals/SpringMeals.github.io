@@ -37,6 +37,13 @@
         <label for="btn-menu">✖️</label>
     </div>
 </div>
+<script>
+    const btnMenu = document.getElementById("btn-menu");
+    const contMenu = document.querySelector(".cont-menu");
+    btnMenu.addEventListener("click", () => {
+        contMenu.classList.toggle("open");
+    });
+    </script>
     <div class="presentacion-equipo">
         <h1>Nuestro Equipo</h1>
         <div class="equipo-grid">
