@@ -45,3 +45,6 @@ h1 {
 p{
     padding: 5px;
 }
+@media screen and (max-width: 768px) {
+  body {
+    background-size: auto; }}
